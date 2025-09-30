@@ -14,7 +14,6 @@ export const test = base.extend({
     cart: async({page}, use) => {
         await use(new Cartpage(page))
     }
-
 })
 
 export { expect } from '@playwright/test';
