@@ -174,17 +174,28 @@ This ensures test files and scenarios run concurrently for faster feedback.
 
 ## 🚀 CI/CD Ready
 
-GitHub Actions workflow is included in:
+Sure ✅ — here’s a **short and clean Jenkins section** you can use in your README 👇
 
-```
-.github/workflows/playwright.yml
-```
+---
 
-You can configure this to:
+## 🚀 CI/CD with Jenkins
 
-* Run tests on every push / PR
-* Generate Allure Reports in CI
-* Deploy reports to GitHub Pages or AWS
+This project uses **Jenkins** for running Playwright tests and generating Allure reports.
+
+* 📄 Pipeline is defined in the root `Jenkinsfile`
+* 🧪 Runs tests, generates reports, and publishes **Allure dashboards** in Jenkins
+* ✅ Requires:
+
+  * NodeJS (v18+) configured in Jenkins
+  * Allure Jenkins Plugin installed
+  * Playwright dependencies on the agent
+
+### 📝 Quick Steps
+
+1. Create a **Pipeline job** in Jenkins
+2. Choose **Pipeline script from SCM** and point to this repo
+3. Run the job — Allure report will be available in Jenkins after the run
+
 
 ---
 
@@ -198,4 +209,5 @@ You can configure this to:
 ## 📝 License
 
 This project is licensed under the MIT License.
+
 
