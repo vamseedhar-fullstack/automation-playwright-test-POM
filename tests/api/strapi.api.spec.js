@@ -13,7 +13,7 @@ test.describe('Strapi API Tests', () => {
     });
   });
 
-  test('GET /pr - should return latest PR mentions', async () => {
+  test('GET /pr - should return latest PR mentions  @regression', async () => {
     const response = await apiContext.get('/pr');
     expect(response.status()).toBe(200);
 
@@ -23,14 +23,14 @@ test.describe('Strapi API Tests', () => {
   });
 
 
-  test('GET /gallery - should return media events', async () => {
+  test('GET /gallery - should return media events  @smoke', async () => {
     const response = await apiContext.get('/gallery');
     expect(response.status()).toBe(200);
     const data = await response.json();
     expect(data).toHaveProperty('data');
   });
 
-  test('GET /events-gallery - should filter by year', async () => {
+  test('GET /events-gallery - should filter by year  @smoke', async () => {
     const response = await apiContext.get('/events-gallery', {
       params: { year: '2023' }
     });
@@ -46,11 +46,10 @@ test.describe('Strapi API Tests', () => {
     expect(data).toHaveProperty('data');
   });
 
-  test('GET /short-videos - should return short videos', async () => {
+  test('GET /short-videos - should return short videos  @regression', async () => {
     const response = await apiContext.get('/short-videos');
     expect(response.status()).toBe(200);
     const data = await response.json();
     expect(data).toHaveProperty('data');
   });
-
 });

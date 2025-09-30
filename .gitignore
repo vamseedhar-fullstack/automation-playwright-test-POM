@@ -13,3 +13,5 @@ traces
 .idea
 reports/*
 reports/**/*
+/allure-report
+/allure-results
