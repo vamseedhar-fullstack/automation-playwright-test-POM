@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('📥 Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/playwright-framework.git'
+                git branch: 'main', url: 'https://github.com/vamseedhar-fullstack/automation-playwright-test-POM.git'
             }
         }
 
